@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bsicons/bootstrap-icons.css">
+    <link rel="stylesheet" href="/bootstrap/4/css/bootstrap.min.css">
+    <title>Color Changer</title>
+    <style>
+    .btn {
+        border-radius: 50px !important;
+        padding: 0.25rem 0.5rem !important;
+    }
+    .field {
+        border-radius: 50px !important;
+        padding: 0.25rem 0.5rem !important;
+    }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-5">
+            <input type="text" class="field mr-3 text-center">
+            <button class="btn btn-lg btn-outline-danger">Generate</button>
+        </div>
+    </div>
+
+
+    <script src="/jquery/3/jquery.min.js"></script>
+    <script src="/popper/2/popper.min.js"></script>
+    <script src="/bootstrap/4/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener("click", ClickMe);
+
+        function ClickMe()
+        {
+            var eln = event.target;
+
+            if(eln.matches(".btn"))
+            {
+                let pbody = document.querySelector("body");
+                let chgBtn =  document.querySelector(".btn");
+                let inField =  document.querySelector(".field");
+
+                pbody.style.background = GenerateColor();
+                chgBtn.style.background = GenerateColor();
+                inField.value = GenerateColor();
+            }
+        }
+
+        function GenerateColor()
+        {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+
+            for(var i = 0; i < 6; i++)
+            {
+                color += letters[ Math.floor(Math.random() * 16) ];
+            }
+            return color;
+        } 
+    </script>
+</body>
+</html>
