@@ -1,0 +1,23 @@
+[33mcommit 5ae93997a7f09e65e0182f788fc7dbb396d58e40[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: msaina <58879390+tsaina@users.noreply.github.com>
+Date:   Sun Jun 26 00:55:06 2022 +0300
+
+    Create README.md
+
+[33mcommit 0ee78e26015ff035902171534415422cdcbd157f[m[33m ([m[1;32mhello-color[m[33m)[m
+Author: sainar <msaina6@gmail.com>
+Date:   Sun Jun 26 00:34:50 2022 +0300
+
+    Done and dusted
+
+[33mcommit 297603ed5b9ef726bdc040b30a3e48d3d2efb8e1[m
+Author: sainar <msaina6@gmail.com>
+Date:   Sat Jun 25 19:40:53 2022 +0300
+
+    A working color changer, at least for now
+
+[33mcommit 2443b26c1ddc1d48126e2c72992082f5efa9a90a[m
+Author: sainar <msaina6@gmail.com>
+Date:   Sat Jun 25 17:50:07 2022 +0300
+
+    New project - colorchanger
