@@ -21,8 +21,8 @@
 <body>
     <div class="container-fluid">
         <div class="row justify-content-center mt-5">
-            <input type="text" class="field mr-3 text-center">
-            <button class="btn btn-lg btn-outline-danger">Generate</button>
+            <input type="text" class="field mr-3 text-center shadow">
+            <button class="btn btn-lg btn-outline-danger shadow">Generate</button>
        </div>
     </div>
 
@@ -32,16 +32,16 @@
     <script>
         document.addEventListener("click", ClickMe);
 
+        let pbody = document.querySelector("body");
+        let chgBtn =  document.querySelector(".btn");
+        let inField =  document.querySelector(".field");
+
         function ClickMe()
         {
             var eln = event.target;
-
+            //
             if(eln.matches(".btn"))
             {
-                let pbody = document.querySelector("body");
-                let chgBtn =  document.querySelector(".btn");
-                let inField =  document.querySelector(".field");
-
                 pbody.style.background = GenerateColor();
                 chgBtn.style.background = GenerateColor();
                 inField.value = GenerateColor();
